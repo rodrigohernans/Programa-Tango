@@ -1,31 +1,23 @@
-$(document).ready(function () {
-	$('.menu-btn').click(function () {
-		$('.menu').toggleClass('active');
-		$('.menu-btn').toggleClass('active');
-	});
-});
-
-
-// Get the modal element
+// Obtener el elemento del modal
 var modal = document.getElementById("modal");
 
-// Get the button that opens the modal
+// Obtener el botón que abre el modal
 var btn = document.getElementById("open-modal-btn");
 
-// Get the <span> element that closes the modal
+// Obtener el elemento <span> que cierra el modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
+// Cuando el usuario hace clic en el botón, abre el modal
 btn.onclick = function () {
 	modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Cuando el usuario hace clic en <span> (x), cierra el modal
 span.onclick = function () {
 	modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Cuando el usuario hace clic en cualquier lugar fuera del modal, cierra el modal
 window.onclick = function (event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
@@ -34,7 +26,8 @@ window.onclick = function (event) {
 
 
 
-/* ----------------- popover   ---------- */
+/* -----------popover ---------- */
+
 
 // Obtener la altura y el ancho del popover
 var popover = document.querySelector('.popover');
@@ -46,17 +39,9 @@ popover.style.top = 'calc(50% - ' + (popoverHeight / 2) + 'px)';
 popover.style.right = 'calc(100% + ' + (popoverWidth / 2) + 'px)';
 
 // Agregar la flecha al popover
-var arrow = document.createElement('div');
-arrow.classList.add('arrow');
-popover.appendChild(arrow);
+const popoverBtn = document.querySelector('.popover-btn');
+const popoverContent = document.querySelector('.popover');
 
-
-/*  contacto   */
-
-
-const botonContacto = document.getElementById('contacto');
-const infoContacto = document.getElementById('contacto-info');
-
-botonContacto.addEventListener('click', () => {
-	infoContacto.classList.toggle('show');
+popoverBtn.addEventListener('click', () => {
+	popoverContent.classList.toggle('show');
 });
