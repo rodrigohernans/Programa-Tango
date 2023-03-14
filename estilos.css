@@ -50,12 +50,6 @@ button {
   border: none;
 }
 
-/*   button.active,
-  button:hover {
-	animation: ani 8s linear infinite;
-	border: none;
-  }
-   */
 @keyframes ani {
   0% {
     background-position: 0%;
@@ -204,7 +198,9 @@ h5 {
 
 .popover-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popover-btn {
@@ -213,6 +209,7 @@ h5 {
   color: white;
   padding: 0.5em;
   border-radius: 1em;
+  width: 10em;
 }
 
 .popover {
@@ -220,14 +217,13 @@ h5 {
   top: 100%;
   left: -100%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 140px;
   padding: 10px;
-  background-color: #fff;
+  background-color: #03a9f4;
+  color: #fefefe;
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   visibility: hidden;
-  opacity: 0;
   transition: visibility 0s linear 0.2s, opacity 0.2s linear;
 }
 
@@ -249,8 +245,24 @@ h5 {
 }
 
 #card1 {
-	text-decoration: line-through;
-} 
+  text-decoration: line-through;
+}
+h1,
+h2 {
+  color: white;
+}
+
+.containerInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .popover {
@@ -259,7 +271,8 @@ h5 {
   }
 }
 
-h1,
-h2 {
-  color: white;
+@media (min-width: 1000px) {
+  iframe {
+    width: 800px;
+  }
 }
