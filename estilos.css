@@ -248,12 +248,9 @@ h5 {
   border-color: transparent transparent #ccc transparent;
 }
 
-/* .popover-btn:hover + .popover,
-.popover:hover {
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0s;
-} */
+#card1 {
+	text-decoration: line-through;
+} 
 
 @media (max-width: 768px) {
   .popover {
