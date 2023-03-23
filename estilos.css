@@ -138,10 +138,21 @@ button:hover::before {
   text-align: center;
 }
 
+.card3 {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #03a9f4;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
 .card1 {
   width: 100%;
   text-align: center;
 }
+
 
 .card img {
   width: 100%;
@@ -247,6 +258,11 @@ h5 {
 #card1 {
   text-decoration: line-through;
 }
+
+#card2 {
+  text-decoration: line-through;
+}
+
 h1,
 h2 {
   color: white;
